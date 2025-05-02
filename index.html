@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweethouseLU</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="nav-top">
+            <h1>SweethouseLU</h1>
+            <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        </div>
+        <nav class="nav-links">
+            <ul>
+            <li><a href="#header">INICIO</a></li>
+            <li><a href="#sobre-mi">SOBRE MI</a></li>
+            <li><a href="#catalogo">CATÁLOGO</a></li>
+            <li><a href="#novedades">NOVEDADES</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <section id="sobre-mi" class="about-full">
+            <div class="about-content">
+              <h2>SOBRE MI</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum placeat, suscipit magni neque incidunt veniam...
+              </p>
+            </div>
+        </section>
+          
+          
+        <section id="catalogo" class="contein">
+            <h2>CATALOGO</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="images/istockphoto-1295633127-612x612.jpg" alt="#">
+                    <h3>Chesscake 18cm</h3>
+                    <h4>200$</h4>
+                </div>
+                <div class="product-item">
+                    <img src="images/istockphoto-1295633127-612x612.jpg" alt="#">
+                    <h3>Chesscake 18cm</h3>
+                    <h4>200$</h4>
+                </div>
+                <div class="product-item">
+                    <img src="images/istockphoto-1295633127-612x612.jpg" alt="#">
+                    <h3>Chesscake 18cm</h3>
+                    <h4>200$</h4>
+                </div>
+                <div class="product-item">
+                    <img src="images/istockphoto-1295633127-612x612.jpg" alt="#">
+                    <h3>Chesscake 18cm</h3>
+                    <h4>200$</h4>
+                </div>
+                <div class="product-item">
+                    <img src="images/istockphoto-1295633127-612x612.jpg" alt="#">
+                    <h3>Chesscake 18cm</h3>
+                    <h4>200$</h4>
+                </div>
+                <div class="product-item">
+                    <img src="images/istockphoto-1295633127-612x612.jpg" alt="#">
+                    <h3>Chesscake 18cm</h3>
+                    <h4>200$</h4>
+                </div>
+                <div class="product-item">
+                    <img src="images/istockphoto-1295633127-612x612.jpg" alt="#">
+                    <h3>Chesscake 18cm</h3>
+                    <h4>200$</h4>
+                </div>
+                <div class="product-item">
+                    <img src="images/istockphoto-1295633127-612x612.jpg" alt="#">
+                    <h3>Chesscake 18cm</h3>
+                    <h4>200$</h4>
+                </div>
+                <!-- Agrega más productos según sea necesario -->
+            </div>
+        </section>
+        
+        <section id="novedades" class="news">
+            <h2>NOVEDADES</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eos facilis dignissimos magni labore, perferendis repudiandae, iusto unde optio nulla quo eius excepturi similique odit asperiores pariatur? Placeat eum, incidunt excepturi quisquam eligendi sint ex est, maiores doloremque numquam nobis tempora vero quasi praesentium quas, magnam quam impedit possimus facere repellat veniam! Sed, quisquam quod? Maxime, distinctio? Culpa enim quibusdam repudiandae, distinctio velit maiores vel. Quo libero harum officiis ab temporibus. Quia veritatis, consequuntur voluptates fugiat aut vitae placeat, odio necessitatibus aspernatur voluptate cum quo eos voluptas ab officia omnis exercitationem sunt repellat tempora sequi et quos assumenda amet. Quis?</p>
+        </section>
+        <section id="contacto" class="contact">
+            <h2>CONTACTO</h2>
+            <input type="button" value="WPP" onclick="window.location.href='https://api.whatsapp.com/send?phone=+59893778318&text=Hola!%20Me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20el%20cat%C3%A1logo%20de%20productos';">
+
+            <input type="button" value="ING" onclick="window.location.href='https://www.instagram.com/sweethouse_lu';">
+
+            
+            
+        </section>
+    </main>
+    <footer id="footer">
+        <h2>SweethouseLU</h2>
+        <p>@sweethouse_lu</p>
+        <p>+598 xxx xxx</p>
+        <img src="" alt="">
+        <img src="" alt="">
+    </footer>
+    <script>
+        const toggleBtn = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+// Toggle de visibilidad y animación
+toggleBtn.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+  toggleBtn.classList.toggle('open');
+});
+
+    </script>
+</body>
+</html>

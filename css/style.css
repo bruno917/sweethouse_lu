@@ -1,0 +1,298 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+}
+  
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Encabezado */
+  #header {
+    background-color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-top h1 {
+    font-size: 1.8rem;
+    color: #d16363;
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    color: #d16363;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .nav-links ul {
+    display: flex;
+  }
+  
+  .nav-links li {
+    list-style: none;
+    margin-left: 20px;
+  }
+  
+  .nav-links li a {
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+  }
+  
+  .nav-links li a:hover {
+    color: #d16363;
+    border-bottom: 2px solid #d16363;
+  }
+  
+  /* Menú hamburguesa */
+  .nav-links.show {
+    display: block;
+  }
+  
+  .nav-links.show ul {
+    display: block;
+  }
+  
+  .nav-links.show li {
+    margin: 10px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      padding: 20px;
+      display: none;
+      flex-direction: column;
+    }
+  
+    .nav-links.show {
+      display: block;
+    }
+  
+    .nav-links ul {
+      display: block;
+    }
+  }
+  
+  /* Sección sobre mi */
+  .about-full {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../images/salad-8274421_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  /* Superposición oscura */
+  .about-full::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* más oscuro */
+    z-index: 0;
+  }
+  
+  /* Texto por encima de la superposición */
+  .about-full > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .about-full h2 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+  }
+
+/* Sección Catálogo */
+#catalogo {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#catalogo h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #d16363;
+}
+
+/* Grilla de productos */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Crea columnas responsivas */
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.product-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-10px); /* Efecto hover */
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+.product-item h3 {
+    margin-top: 10px;
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.product-item h4 {
+    font-size: 1.4rem;
+    color: #d16363;
+    margin-top: 5px;
+}
+
+
+/* Novedades */
+.news {
+    position: relative;
+    padding: 40px 20px;
+    background-image: url(../images/salad-8274421_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Superposición oscura */
+  .news::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Aumenta el valor para mayor oscuridad */
+    z-index: 0;
+  }
+  
+  /* Texto por encima de la superposición */
+  .news > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .news h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .news p {
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  
+  /* Contacto */
+  .contact {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 2.5rem;
+    color: #d16363;
+    margin-bottom: 20px;
+  }
+  
+  .contact input {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid #d16363;
+    background-color: transparent;
+    color: #d16363;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact input:hover {
+    background-color: #d16363;
+    color: white;
+  }
+  
+  .contact img {
+    width: 100px;
+    margin-top: 20px;
+  }
+  
+  /* Pie de página */
+  #footer {
+    background-color: #d16363;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #footer h2 {
+    font-size: 2rem;
+  }
+  
+  #footer p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  #footer img {
+    width: 50px;
+    margin: 10px;
+  }
+  
