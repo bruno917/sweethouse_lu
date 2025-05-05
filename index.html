@@ -5,86 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SweethouseLU</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header id="header">
         <div class="nav-top">
             <h1>SweethouseLU</h1>
+            <div class="search-container">
+                <input type="text" id="buscador" placeholder="Buscar productos...">
+            </div>
             <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
         </div>
         <nav class="nav-links">
             <ul>
-            <li><a href="#header">INICIO</a></li>
-            <li><a href="#sobre-mi">SOBRE MI</a></li>
-            <li><a href="#catalogo">CATÁLOGO</a></li>
-            <li><a href="#novedades">NOVEDADES</a></li>
-            <li><a href="#contacto">CONTACTO</a></li>
+                <li><a href="#header">INICIO</a></li>
+                <li><a href="#sobre-mi">SOBRE MI</a></li>
+                <li><a href="#catalogo">CATÁLOGO</a></li>
+                <li><a href="#novedades">NOVEDADES</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
+    
+    
     <main id="main">
-        <section id="sobre-mi" class="about-full">
+        <section id="sobre-mi" class="about-full" data-aos="fade-up">
             <div class="about-content">
               <h2>SOBRE MI</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum placeat, suscipit magni neque incidunt veniam...
+                Hola, mi nombre es Lucía, tengo 21 años y lo largo de estos años participé en varios talleres y cursos de cocina, repostería y pastelería, que me ayudaron a aprender, mejorar y compartir este mundo. Disfruto mucho experimentar con nuevas recetas, sabores y técnicas, y cada día busco seguir creciendo en este camino
+              </p>
+              <p>
+                ¡Bienvenidos a este espacio donde comparto un pedacito de lo que más me gusta hacer!
               </p>
             </div>
         </section>
           
           
         <section id="catalogo" class="contein">
-            <h2>CATALOGO</h2>
+            <h2 data-aos="fade-up">CATALOGO</h2>
             <div class="product-grid">
-                <div class="product-item">
+                <div class="product-item" data-aos="zoom-in">
                     <img src="images/istockphoto-1295633127-612x612.jpg" alt="#">
-                    <h3>Chesscake 18cm</h3>
-                    <h4>200$</h4>
+                    <h3>Alfajores de maicena</h3>
+                    <h4>6 x 200$</h4>
+                    <h4>12 x 200$</h4>
+                    <h4>24 x 200$</h4>
                 </div>
-                <div class="product-item">
+                <div class="product-item" data-aos="zoom-in">
                     <img src="images/istockphoto-1295633127-612x612.jpg" alt="#">
-                    <h3>Chesscake 18cm</h3>
-                    <h4>200$</h4>
+                    <h3>Scones sin relleno</h3>
+                    <h4>10 x 130$</h4>
+                    <p>Scones comunes sin relleno</p>
+                    
                 </div>
-                <div class="product-item">
+                <div class="product-item" data-aos="zoom-in">
                     <img src="images/istockphoto-1295633127-612x612.jpg" alt="#">
-                    <h3>Chesscake 18cm</h3>
-                    <h4>200$</h4>
+                    <h3>Scones con relleno</h3>
+                    <h4>10 x 250$</h4>
+                    <p>Scones comunes con relleno(bondiola y rucula)</p>
                 </div>
-                <div class="product-item">
+                <div class="product-item" data-aos="zoom-in">
                     <img src="images/istockphoto-1295633127-612x612.jpg" alt="#">
-                    <h3>Chesscake 18cm</h3>
-                    <h4>200$</h4>
+                    <h3>Scones integrales</h3>
+                    <h4>10 x 140$</h4>
+                    <p>Scones integrales sin relleno</p>
                 </div>
-                <div class="product-item">
+                <div class="product-item" data-aos="zoom-in">
                     <img src="images/istockphoto-1295633127-612x612.jpg" alt="#">
-                    <h3>Chesscake 18cm</h3>
-                    <h4>200$</h4>
+                    <h3>Scones integrales con relleno</h3>
+                    <h4>10 x 270$</h4>
+                    <p>Scones integrales con relleno(bondiola y rucula)</p>
                 </div>
-                <div class="product-item">
+                <div class="product-item" data-aos="zoom-in">
                     <img src="images/istockphoto-1295633127-612x612.jpg" alt="#">
-                    <h3>Chesscake 18cm</h3>
-                    <h4>200$</h4>
+                    <h3>Budin de limón y naranja</h3>
+                    <h4>280$</h4>
+                    <p>Budin de limón y naranja con o sin glaseado</p>
                 </div>
-                <div class="product-item">
+                <div class="product-item" data-aos="zoom-in">
                     <img src="images/istockphoto-1295633127-612x612.jpg" alt="#">
-                    <h3>Chesscake 18cm</h3>
-                    <h4>200$</h4>
-                </div>
-                <div class="product-item">
-                    <img src="images/istockphoto-1295633127-612x612.jpg" alt="#">
-                    <h3>Chesscake 18cm</h3>
-                    <h4>200$</h4>
+                    <h3>Chipa</h3>
+                    <h4>18 x 200$</h4>
+                    <p>Chipa </p>
                 </div>
                 <!-- Agrega más productos según sea necesario -->
             </div>
         </section>
         
-        <section id="novedades" class="news">
+        <section id="novedades" class="news" data-aos="fade-up">
             <h2>NOVEDADES</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eos facilis dignissimos magni labore, perferendis repudiandae, iusto unde optio nulla quo eius excepturi similique odit asperiores pariatur? Placeat eum, incidunt excepturi quisquam eligendi sint ex est, maiores doloremque numquam nobis tempora vero quasi praesentium quas, magnam quam impedit possimus facere repellat veniam! Sed, quisquam quod? Maxime, distinctio? Culpa enim quibusdam repudiandae, distinctio velit maiores vel. Quo libero harum officiis ab temporibus. Quia veritatis, consequuntur voluptates fugiat aut vitae placeat, odio necessitatibus aspernatur voluptate cum quo eos voluptas ab officia omnis exercitationem sunt repellat tempora sequi et quos assumenda amet. Quis?</p>
         </section>
-        <section id="contacto" class="contact">
+        <section id="contacto" class="contact" data-aos="fade-up">
             <h2>CONTACTO</h2>
             <input type="button" value="WPP" onclick="window.location.href='https://api.whatsapp.com/send?phone=+59893561538&text=Hola!%20Me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20el%20cat%C3%A1logo%20de%20productos';">
 
@@ -103,14 +116,32 @@
     </footer>
     <script>
         const toggleBtn = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
-
-// Toggle de visibilidad y animación
-toggleBtn.addEventListener('click', () => {
-  navLinks.classList.toggle('show');
-  toggleBtn.classList.toggle('open');
-});
-
-    </script>
+        const navLinks = document.querySelector('.nav-links');
+        toggleBtn.addEventListener('click', () => {
+          navLinks.classList.toggle('show');
+          toggleBtn.classList.toggle('open');
+        });
+      </script>
+    
+      <script>
+        const buscador = document.getElementById('buscador');
+        buscador.addEventListener('input', function () {
+          const filtro = this.value.toLowerCase();
+          const productos = document.querySelectorAll('#catalogo .product-item');
+          productos.forEach(producto => {
+            const nombre = producto.querySelector('h3').textContent.toLowerCase();
+            producto.style.display = nombre.includes(filtro) ? 'block' : 'none';
+          });
+        });
+      </script>
+    
+      <!-- AOS JS -->
+      <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          duration: 1000,
+          once: true
+        });
+      </script>
 </body>
 </html>
