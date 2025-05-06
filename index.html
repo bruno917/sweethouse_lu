@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SweethouseLU</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SweethouseLU | Repostería artesanal casera por Lucía</title>
+        
+        <!-- SEO Básico -->
+        <meta name="description" content="Repostería casera y artesanal: alfajores, budines, scones, pastafrolas y más. Productos elaborados por Lucía en Montevideo.">
+        <meta name="keywords" content="repostería artesanal, alfajores caseros, budines, scones, pastafrola, dulces, postres Montevideo, SweethouseLU, Lucía">
+        <meta name="author" content="Lucía - SweethouseLU">
+      
+        <!-- Open Graph / Facebook / WhatsApp -->
+        <meta property="og:title" content="SweethouseLU | Repostería artesanal casera">
+        <meta property="og:description" content="Descubrí productos dulces hechos con amor por Lucía: alfajores, budines, galletitas, y más.">
+        <meta property="og:image" content="https://tusitio.com/images/og-image.jpg"> <!-- Cambiar por una imagen destacada online -->
+        <meta property="og:url" content="https://tusitio.com"> <!-- Cambiar por tu URL real -->
+        <meta property="og:type" content="website">
+      
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="SweethouseLU | Repostería artesanal">
+        <meta name="twitter:description" content="Productos dulces caseros hechos con dedicación por Lucía.">
+        <meta name="twitter:image" content="https://tusitio.com/images/og-image.jpg">
+      
+        <!-- Icono -->
+        <link rel="icon" href="logo-modified.png" type="image/x-icon">
+      
+        <!-- Estilos y bibliotecas -->
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      </head>
+      
 <body>
     <header id="header">
         <div class="nav-top">
@@ -18,7 +41,7 @@
         <nav class="nav-links">
             <ul>
                 <li><a href="#header">INICIO</a></li>
-                <li><a href="#sobre-mi">SOBRE MI</a></li>
+                <li><a href="#sobre-mi">SOBRE MÍ</a></li>
                 <li><a href="#catalogo">CATÁLOGO</a></li>
                 <li><a href="#novedades">NOVEDADES</a></li>
                 <li><a href="#contacto">CONTACTO</a></li>
@@ -30,7 +53,7 @@
     <main id="main">
         <section id="sobre-mi" class="about-full" data-aos="fade-up">
             <div class="about-content">
-            <h2>SOBRE MI</h2>
+            <h2>SOBRE MÍ</h2>
             <p>
                 Hola, mi nombre es Lucía, tengo 21 años y lo largo de estos años participé en varios talleres y cursos de cocina, repostería y pastelería, que me ayudaron a aprender, mejorar y compartir este mundo. Disfruto mucho experimentar con nuevas recetas, sabores y técnicas, y cada día busco seguir creciendo en este camino
             </p>
@@ -40,10 +63,10 @@
             </div>
         </section>
         <section id="catalogo" class="contein">
-            <h2 data-aos="fade-up">CATALOGO</h2>
+            <h2 data-aos="fade-up">CATÁLOGO</h2>
             <div class="product-grid">
                 <div class="product-item" data-aos="zoom-in">
-                    <img src="images/alfajor de maicena.jpeg" alt="#">
+                    <img src="images/alfajor de maicena.jpeg" alt="alfajores de maicena">
                     <h3>Alfajores de maicena</h3>
                     <h4>6 x 200$</h4>
                     <h4>12 x 200$</h4>
@@ -51,67 +74,60 @@
                     <button class="wpp-button" onclick="enviarPedido('Alfajores de maicena')">Pedir por WhatsApp</button>
                 </div>
                 <div class="product-item" data-aos="zoom-in">
-                    <img src="images/scones comunes sin relleno.jpeg" alt="#">
-                    <h3>Scones sin relleno</h3>
+                    <img src="images/scones comunes sin relleno.jpeg" alt="scones">
+                    <h3>Scones comunes con/sin relleno</h3>
                     <h4>10 x 130$</h4>
-                    <p>Scones comunes sin relleno</p>
-                    <button class="wpp-button" onclick="enviarPedido('Scones comunes sin relleno')">Pedir por WhatsApp</button>
+                    <p>Scones comunes</p>
+                    <button class="wpp-button" onclick="enviarPedido('Scones comunes')">Pedir por WhatsApp</button>
                 </div>
                 <div class="product-item" data-aos="zoom-in">
-                    <img src="images/istockphoto-1295633127-612x612.jpg" alt="#">
-                    <h3>Scones con relleno</h3>
-                    <h4>10 x 250$</h4>
-                    <p>Scones comunes con relleno(bondiola y rucula)</p>
-                    <button class="wpp-button" onclick="enviarPedido('Scones comunes con relleno')">Pedir por WhatsApp</button>
-                </div>
-                <div class="product-item" data-aos="zoom-in">
-                    <img src="images/istockphoto-1295633127-612x612.jpg" alt="#">
-                    <h3>Scones integrales</h3>
+                    <img src="images/scones integrales.jpeg" alt="scones integrales">
+                    <h3>Scones integrales con/sin relleno</h3>
                     <h4>10 x 140$</h4>
-                    <p>Scones integrales sin relleno</p>
-                    <button class="wpp-button" onclick="enviarPedido('Scones integrales sin relleno')">Pedir por WhatsApp</button>
+                    <p>Scones integrales</p>
+                    <button class="wpp-button" onclick="enviarPedido('Scones integrales')">Pedir por WhatsApp</button>
                 </div>
                 <div class="product-item" data-aos="zoom-in">
-                    <img src="images/istockphoto-1295633127-612x612.jpg" alt="#">
-                    <h3>Scones integrales con relleno</h3>
-                    <h4>10 x 270$</h4>
-                    <p>Scones integrales con relleno(bondiola y rucula)</p>
-                    <button class="wpp-button" onclick="enviarPedido('Scones integrales con relleno')">Pedir por WhatsApp</button>
-                </div>
-                <div class="product-item" data-aos="zoom-in">
-                    <img src="images/istockphoto-1295633127-612x612.jpg" alt="#">
-                    <h3>Budin de limón y naranja</h3>
+                    <img src="images/naranja y limon.jpeg" alt="budin de limon y naranja">
+                    <h3>Budín de limón y naranja</h3>
                     <h4>280$</h4>
-                    <p>Budin de limón y naranja con o sin glaseado</p>
-                    <button class="wpp-button" onclick="enviarPedido('Budin de limón')">Pedir por WhatsApp</button>
+                    <p>Budín de limón y naranja con o sin glaseado</p>
+                    <button class="wpp-button" onclick="enviarPedido('Budin de limón y naranja')">Pedir por WhatsApp</button>
                 </div>
                 <div class="product-item" data-aos="zoom-in">
-                    <img src="images/istockphoto-1295633127-612x612.jpg" alt="#">
+                    <img src="images/chipa.jpeg" alt="Chipa">
                     <h3>Chipa</h3>
                     <h4>18 x 200$</h4>
                     <p>Chipa </p>
                     <button class="wpp-button" onclick="enviarPedido('Chipa')">Pedir por WhatsApp</button>
                 </div>
                 <div class="product-item" data-aos="zoom-in">
-                    <img src="images/istockphoto-1295633127-612x612.jpg" alt="#">
-                    <h3>Chipa</h3>
-                    <h4>18 x 200$</h4>
-                    <p>Chipa </p>
-                    <button class="wpp-button" onclick="enviarPedido('Chipa')">Pedir por WhatsApp</button>
+                    <img src="images/pan de nuez 2.jpeg" alt="pan de nuez">
+                    <h3>Pan de nuez</h3>
+                    <h4>280$</h4>
+                    <p>Pan saludable con nueces</p>
+                    <button class="wpp-button" onclick="enviarPedido('Pan de nuez')">Pedir por WhatsApp</button>
                 </div>
                 <div class="product-item" data-aos="zoom-in">
-                    <img src="images/istockphoto-1295633127-612x612.jpg" alt="#">
-                    <h3>Chipa</h3>
-                    <h4>18 x 200$</h4>
-                    <p>Chipa </p>
-                    <button class="wpp-button" onclick="enviarPedido('Chipa')">Pedir por WhatsApp</button>
+                    <img src="images/pan integral.jpeg" alt="pan integral">
+                    <h3>Pan integral</h3>
+                    <h4>280$</h4>
+                    <p>Pan elaborado con harina integral</p>
+                    <button class="wpp-button" onclick="enviarPedido('Pan integral')">Pedir por WhatsApp</button>
                 </div>
                 <div class="product-item" data-aos="zoom-in">
-                    <img src="images/istockphoto-1295633127-612x612.jpg" alt="#">
-                    <h3>Chipa</h3>
-                    <h4>18 x 200$</h4>
-                    <p>Chipa </p>
-                    <button class="wpp-button" onclick="enviarPedido('Chipa')">Pedir por WhatsApp</button>
+                    <img src="images/galletitas con o sin azucar.jpeg" alt="galletas con/sin azucar">
+                    <h3>Galletas con/sin azúcar</h3>
+                    <h4>8 x 200</h4>
+                    <p>Galletas de limón o naranja</p>
+                    <button class="wpp-button" onclick="enviarPedido('Galletas')">Pedir por WhatsApp</button>
+                </div>
+                <div class="product-item" data-aos="zoom-in">
+                    <img src="images/pasta frola membrillo.jpeg" alt="pastafrola">
+                    <h3>Pastafrola </h3>
+                    <h4>290$</h4>
+                    <p>Pastafrola de membrillo/dulce de leche</p>
+                    <button class="wpp-button" onclick="enviarPedido('Pastafrola')">Pedir por WhatsApp</button>
                 </div>
                 <!-- Agrega más productos según sea necesario -->
             </div>
@@ -144,7 +160,7 @@
         function enviarPedido(producto) {
           const numero = "+59893561538"; // Cambiar por tu número de WhatsApp (formato internacional)
         const mensaje = `Hola, quiero pedir este producto: ${producto}`;
-        window.open(`https://wa.me/${+59893561538}?text=${encodeURIComponent(mensaje)}`, '_blank');
+        window.open(`https://wa.me/${59893561538}?text=${encodeURIComponent(mensaje)}`, '_blank');
         }
     </script>
     <script>
@@ -161,9 +177,17 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init({
-        duration: 1000,
-        once: true
+          duration: 1000,
+          once: true,
+          startEvent: 'DOMContentLoaded', // Asegura que se inicie luego de que el DOM esté listo
         });
-    </script>
+      </script>
+      
+    <script>
+        window.onbeforeunload = function () {
+          window.scrollTo(0, 0);
+        };
+      </script>
+      
 </body>
 </html>
